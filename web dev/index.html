@@ -2,10 +2,11 @@
 <html>
 <head>
 <title>Welcome | Web Design and Integrated Media</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Styles-->
 <link rel="stylesheet" href="Simple.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<script src="https://kit.fontawesome.com/7732b860ea.js"; crossorigin="anonymous"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 <style>
 		body {
 			font: 16px -apple-system, sans-serif;
@@ -31,8 +32,6 @@ border: 3px solid #ECECEC;
 box-sizing: border-box;
 }
     </style>
-<script src="https://kit.fontawesome.com/7732b860ea.js"; crossorigin="anonymous"></script>
-<script src="https://www.w3schools.com/lib/w3.js"></script>
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
@@ -74,13 +73,15 @@ body, html {
   }
 }
 </style>
-<!-- Navbar (sit on top) -->
+<!--End of Styles-->
+
+<!-- Navigationbar -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
-    <a href="#" class="w3-bar-item w3-button white">Web Design</a>
+    <a href="#" class="w3-bar-item w3-button white"> Web Design and Integrated Media</a>
   </div>
 </div>
-<!-- First Parallax Image with Logo Text -->
+<!-- Center Logo -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Home.</span>
@@ -90,8 +91,34 @@ body, html {
 <br>
 <h1 class="w3-center">Are you interested in learning about how to make sites? <br>Or how to use Photoshop? </h1>
         <br>
-        <h5 class="w3-center">If you said yes to any of these questions, you should sign up for Web Design!</h5>
+        <h5 class="w3-center">If you said yes to any of these questions, you should sign up for Web Design and Integrated Media!</h5>
         <br>
+        <br>
+        <div class="w3-col m6 w3-padding-large">
+          <h1 class="w3-center">HTML</h1><br>
+          <h5 class="w3-center">Learn how to code the web! You learn how to make websites that catch people's eyes, and websites that enpower people to the new world. You will learn tools that the industry uses to make websites and how to </h5>
+          <p class="w3-large w3-text-grey w3-hide-medium w3-center"><a href="#">Link to learn more</a></p>
+          
+        </div>
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <img src="#image" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+         </div>
+      </div>
+      <!-- About Section -->
+      <div class="w3-row w3-padding-64" id="about">
+          <div class="w3-col m6 w3-padding-large w3-hide-small">
+           <img src="#image" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+          </div>
+      
+          <div class="w3-col m6 w3-padding-large">
+            <h1 class="w3-center">Photoshop</h1><br>
+            <h5 class="w3-center">Description on Photoshop</h5>
+            <p class="w3-large w3-text-grey w3-hide-medium w3-center"><a href="#">Link to learn more</a></p>
+          </div>
+        </div>
+        <h1 class="w3-center">Gallery</h1>
+        <br>
+        <h3 class="w3-center">See more ></h3>
         <br>
 <div class="footer w3-center">
     <h1>Made by Ariel Araya and Erick Mendez</h1>
@@ -99,29 +126,7 @@ body, html {
 </div>
 
 <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-  <img id="img01" class="w3-image">
-  <p id="caption" class="w3-opacity w3-large"></p>
-</div>
-</div>
-<!--Sideshow scripts-->
 <script>
-  w3.slideshow(".nature", 3000);
-</script>
-<!--Modals and stuff-->
-<script>
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
