@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TJ Stage</title>
+<!--Styles-->
+<link rel="stylesheet" href="Simple.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<script src="https://kit.fontawesome.com/7732b860ea.js"; crossorigin="anonymous"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+  <style>
+		body {
+			font: 16px -apple-system, sans-serif;
+			line-height: 1.333em;
+		}
+		header {
+			text-align: center;
+		}
+    iframe  {
+      position: float;
+      margin-top: 100px;
+      height: 480px;
+      width: 854px;
+      border: 3px solid #ECECEC;
+      box-sizing: border-box;
+    }
+    video  {
+      position: float;
+      margin-top: 100px;
+      height: 480px;
+      width: 854px;
+      border: 3px solid #ECECEC;
+      box-sizing: border-box;
+    }
+    .img-1  {
+      position: float;
+      border: 3px solid black;
+      box-sizing: border-box;
+    }
+  </style>
+
+  <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+      body, html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+      }
+
+      .bgimg-1{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .bgimg-1 {
+        background-image: url('stage3.gif');
+        min-height: 100%; 
+      }
+
+      .w3-wide {letter-spacing: 10px;}
+      .w3-hover-opacity {cursor: pointer;}
+
+      @media only screen and (max-device-width: 1600px) {
+        .bgimg-1 {
+        background-attachment: scroll;
+      }
+    }
+  </style>
+<!--End of Styles-->
+</head>
+<!--Body-->
+<body>
+  <!-- Center Logo -->
+  <div class="bgimg-1 w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-animate-opacity">
+        <img src="intothewoods.png" width="200">
+        <br>
+        <br>
+        <h3><a href="#">Sign up for auditions </a></h3>
+      </span>
+    </div>
+  </div>
+<!-- Scripts -->
+<script>
+// Makes the nav bar have an outline
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Gallery Zoom
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
+</html>
