@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Web Dev</title>
+    <link rel="stylesheet" href="Simple.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body class="root">
+    <!--Nav Bar-->
+    <p class="w3-center"><a href="index.html" class="w3-text-grey">Home.</a></p>
+    <br>
+    <br>
+    <div class="w3-display-middle w3-animate-opacity">
+        <h4 class="w3-animate-right">Our Photoshop Collection</h4>
+        <h2 class="w3-animate-right">Pictures we're proud of.</h2>
+        <div class="w3-center">
+            <img class="nature" src="img1.jpg" width="50%">
+            <img class="nature" src="img2.png" width="50%">
+            <img class="nature" src="img3.jpg" width="50%">
+            <img class="nature" src="3.jpg" width="50%">
+            <img class="nature" src="4.jpg" width="50%">
+            <img class="nature" src="5.jpg" width="50%">
+        </div>
+        <p>
+            <button onclick="myShow.previous()">Previous</button>
+            <button onclick="myShow.next()">Next</button>
+        </p>
+        <script>
+            myShow = w3.slideshow(".nature", 0);
+        </script>
+        <br>
+        <a href="menu.html" class="w3-animate-right"><p class="w3-center">go back to the menu ></p></a>
+    </div>
+    <br>    
+</body>
+
+</html>
