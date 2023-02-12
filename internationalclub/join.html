@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>International Club Page.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Outside Frameworks-->
+    <!--Credits to w3schools for w3.css, Google Fonts for the Raleway font, and Cloudflare/Font Awesome for font-awesome.min.css.-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Some more styles-->
+    <style>
+      body,h1,h3 {font-family: "Raleway", sans-serif}
+
+      body, html {height: 100%}
+
+      body {color:darkgray;}
+
+      .bgimg {
+        background-image: url('images/joinBanner.png');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+      
+      @media only screen and (min-width: 600px) {
+          .hide-pc {
+          display:none;
+          }
+        }
+
+        .roundedCorner {
+          corner-radius: 25;
+        }
+    </style>
+  </head>
+    <!--Ultracode website created December 2022 to January 2023 (Last updated Monday January 16th)-->
+  <body>
+    <!--Desktop Mode (This is the main page that Desktop Users will see, Below there should be a Moblie optimized site.)-->
+      <!--Full page header-->
+      <div class="bgimg w3-display-container w3-animate-opacity w3-text-white w3-image w3-hide-small">
+      </div>
+      <!--Nav Bar-->
+      <div class="w3-container w3-padding w3-hide-small">
+      <br>
+      <h5>NAVIGATION</h5>
+      <div class="w3-bar">
+      <a href="index.html" class="w3-bar-item w3-button"><h3>Home</h3></a>
+      <a href="join.html" class="w3-bar-item w3-button"><h3>Join</h3></a>
+      <a href="internationalNight.html" class="w3-bar-item w3-button"><h3>International Night</h3></a>
+      <a href="support.html" class="w3-bar-item w3-button"><h3>Support us</h3></a>
+      <a href="leadership.html" class="w3-bar-item w3-button"><h3>Leadership</h3></a>
+      <a href="contact.html" class="w3-bar-item w3-button"><h3>Contact us</h3></a>
+    </div>
+  </div>
+  <h1 class="w3-hide">If you see this text, that means that the stylesheet is blocked. Try reconnecting to the internet to get through</h1>
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64 w3-hide-small">
+		  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSejg0s_l1edxi9cEeFrvcFlauSTdTpZvsIEfCwtW-P8Gg--dg/viewform?embedded=true" width="1640" height="1963" frameborder="0" marginwidth="0" class="w3-image">Loading…</iframe>
+	</div>
+      <!--Footer-->
+      <div class="footer w3-grey w3-center w3-text-white w3-padding-16 w3-hide-small">
+        <h5>Copyright 2023 TJ High School International Club.</h5>
+        <a href="http://arielaraya.xyz">made by ariel.</a>
+      </div>
+
+    <!--Mobile Mode (This is the main page that Moblie Users will see. Above there should be a Desktop optimized site)-->
+
+      <!--Ultracode SideBar-->
+      <div class="w3-sidebar w3-bar-block w3-card w3-animate-left hide-pc" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Close &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+        <a href="getstarted.html" class="w3-bar-item w3-button w3-mobile">Join</a>
+        <a href="aboutus.html" class="w3-bar-item w3-button w3-mobile">International Night</a>
+        <a href="contactus.html" class="w3-bar-item w3-button w3-mobile">Support us</a>
+        <a href="aboutus.html" class="w3-bar-item w3-button w3-mobile">Leadership</a>
+        <a href="contactus.html" class="w3-bar-item w3-button w3-mobile">Contact us</a>
+      </div>
+      
+      <div id="main">
+      <!--Ultracode Heading-->
+      <div class="hide-pc">
+        <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <div class="w3-container">
+          <h1>Join</h1>
+        </div>
+      </div>
+      <!--Ultracode image-->
+      <img src="images/flags.webp" class="w3-image w3-container hide-pc w3-opacity">
+      <!--Ultracode text-->
+		  
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64 hide-pc">
+		  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSejg0s_l1edxi9cEeFrvcFlauSTdTpZvsIEfCwtW-P8Gg--dg/viewform?embedded=true" width="1640" height="1963" frameborder="0" marginheight="0" marginwidth="0" class="w3-image">Loading…</iframe>
+	</div>
+
+      <!--Ultracode Footer-->
+      <div class="footer w3-center hide-pc">
+        <br>
+        <h5>Copyright 2023 TJ High School International Club.</h5>
+        <a href="sitemap.html">Sitemap</a>
+        <br><br>
+      </div>
+	  </div>
+      <!--Website Scripts-->
+        <script>
+          function w3_open() {
+            document.getElementById("main").style.marginLeft = "25%";
+            document.getElementById("mySidebar").style.width = "25%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+          }
+          
+          function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+          }
+          </script>
+  </body>
+</html>

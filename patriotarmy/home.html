@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="Simple.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="root">
+    <div class="w3-display-middle">
+		<h1 class="w3-center">Patriot Nation.</h1>
+		<div class="w3-bar">
+  			<button class="w3-bar-item w3-button" onclick="openCity('London')">Recent Games</button>
+  			<button class="w3-bar-item w3-button" onclick="openCity('Paris')">Upcoming Games</button>
+  			<button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">All Games</button>
+		</div>
+		<br>
+		<div id="London" class="city w3-center">
+		<h3>Recent Games</h3>
+		<h4>Soccer</h4>
+		<a href="summary.html">
+			<div class="w3-panel w3-border w3-round w3-center">
+				<p>TJ vs. Other School</p>
+				<h2>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;2</h2>
+				<p>End of game</p>
+			</div>
+		</a>
+		<h4>Football</h4>
+		<a href="summary.html">
+			<div class="w3-panel w3-border w3-round w3-center">
+				<p>TJ vs. Frederick</p>
+				<h2>7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;102</h2>
+				<p>End of game</p>
+			</div>
+		</a>
+		</div>
+		<div id="Paris" class="city w3-center" style="display:none">
+		<h3>Upcoming Games</h3>
+		<h4>Soccer</h4>
+		<a href="summary.html">
+			<div class="w3-panel w3-border w3-round w3-center">
+				<p>TJ vs. Other School</p>
+				<h2>October 13th at 7pm</h2>
+				<p>TJ Stadium</p>
+			</div>
+		</a>
+		<h4>Football</h4>
+		<a href="summary.html">
+			<div class="w3-panel w3-border w3-round w3-center">
+				<p>TJ vs. Other School</p>
+				<h2>October 13th at 7pm</h2>
+				<p>TJ Stadium</p>
+			</div>
+		</a>
+		</div>
+		<div id="Tokyo" class="city" style="display:none">
+			<h3>Soccer.</h3>
+			<h3>Football.</h3>
+			<h3>Baseball.</h3>
+			<h3>Golf.</h3>
+		</div>
+    </div>
+	<!--Scripts-->
+	<script>
+		function openCity(cityName) {
+  			var i;
+  			var x = document.getElementsByClassName("city");
+  			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+  			}
+  			document.getElementById(cityName).style.display = "block";  
+		}
+</script>
+</body>
+
+</html>
